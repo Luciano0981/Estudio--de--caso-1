@@ -10,6 +10,10 @@ body {
     background-color: #f0f0f0;
 }
 
+h1 {
+    margin-top: 20px;
+}
+
 #notes-container {
     width: 80%;
     display: grid;
@@ -25,6 +29,30 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
 button {
     margin-top: 10px;
     padding: 10px 20px;
@@ -37,4 +65,12 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+button#delete-note {
+    background-color: #dc3545;
+}
+
+button#delete-note:hover {
+    background-color: #c82333;
 }
